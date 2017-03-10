@@ -1,0 +1,92 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "angular-ui-keypress@0.0.1",
+        "scope": null,
+        "escapedName": "angular-ui-keypress",
+        "name": "angular-ui-keypress",
+        "rawSpec": "0.0.1",
+        "spec": "0.0.1",
+        "type": "version"
+      },
+      "/Applications/XAMPP/xamppfiles/htdocs/chart-maker"
+    ]
+  ],
+  "_from": "angular-ui-keypress@0.0.1",
+  "_id": "angular-ui-keypress@0.0.1",
+  "_inCache": true,
+  "_location": "/angular-ui-keypress",
+  "_nodeVersion": "5.4.1",
+  "_npmUser": {
+    "name": "graingert",
+    "email": "tagrain@gmail.com"
+  },
+  "_npmVersion": "3.3.12",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "angular-ui-keypress@0.0.1",
+    "scope": null,
+    "escapedName": "angular-ui-keypress",
+    "name": "angular-ui-keypress",
+    "rawSpec": "0.0.1",
+    "spec": "0.0.1",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular-ui-keypress/-/angular-ui-keypress-0.0.1.tgz",
+  "_shasum": "f0953e4ae2acab06608631e36759695f7d5b81ce",
+  "_shrinkwrap": null,
+  "_spec": "angular-ui-keypress@0.0.1",
+  "_where": "/Applications/XAMPP/xamppfiles/htdocs/chart-maker",
+  "author": {
+    "name": "https://github.com/graingert/ui-keypress/graphs/contributors"
+  },
+  "bugs": {
+    "url": "https://github.com/angular-ui/ui-utils/issues"
+  },
+  "dependencies": {},
+  "description": "ui.keypress from angular-ui-uitls",
+  "devDependencies": {
+    "angular-ui-publisher": "~1.1.3",
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-jshint": "~0.5.4",
+    "grunt-contrib-uglify": "~0.2.1",
+    "grunt-contrib-watch": "~0.4.3",
+    "grunt-conventional-changelog": "~1.0.0",
+    "grunt-karma": "~0.6.2",
+    "grunt-ngmin": "0.0.3",
+    "load-grunt-tasks": "~0.2.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "f0953e4ae2acab06608631e36759695f7d5b81ce",
+    "tarball": "https://registry.npmjs.org/angular-ui-keypress/-/angular-ui-keypress-0.0.1.tgz"
+  },
+  "gitHead": "6e97342de713f6d538aa8224969a564671157acd",
+  "homepage": "https://github.com/graingert/ui-keypress",
+  "license": "MIT License, http://www.opensource.org/licenses/MIT",
+  "main": "./modules/keypress/keypress.js",
+  "maintainers": [
+    {
+      "name": "graingert",
+      "email": "tagrain@gmail.com"
+    }
+  ],
+  "name": "angular-ui-keypress",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/angular-ui/ui-utils.git"
+  },
+  "scripts": {},
+  "version": "0.0.1"
+}

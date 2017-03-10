@@ -1,4 +1,3 @@
-
 #container{
     position: relative;
     text-align: center;
@@ -9,11 +8,11 @@
 }
 #header{
     position: absolute;
-    top: 50%;
+    top: 20vh;
     width: 100%;
     text-align: center;
 }
-#container .btn-success{
+#container .btn-primary{
     bottom: 25px;
     position: relative;
 }
@@ -29,4 +28,17 @@ ul{list-style: none; padding: 0; margin: 0}
 li.showLabels{display: inline-block; padding: 3px 10px; background: lightblue; margin: 5px; border-radius: 3px}
 .showDataInputs{
     position: relative;
+    z-index: 1;
 }
+.showDataInputs .glyphicon-chevron-right{
+    position: absolute;
+    top: 30px;
+    left: -35px;
+    font-size: 26px;
+}
+.chartPie{
+    float: none;
+    margin: auto;
+    z-index: 0;
+}
+span[role=button]:hover{cursor: pointer}

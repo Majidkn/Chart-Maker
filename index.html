@@ -4,7 +4,8 @@
         <meta charset="utf-8" />
 
         <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
-        <link rel="stylesheet" href="app/getDataDirective/style.css">
+        <link rel="stylesheet" href="app/pieChart/style.css">
+        <link rel="stylesheet" href="lib/angular-loading-bar/src/loading-bar.css">
 
         <script type="text/javascript" src="lib/jquery/dist/jquery.js"></script>
         <script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.js"></script>
@@ -13,14 +14,17 @@
         <script type="text/javascript" src="lib/chart.js/dist/Chart.js"></script>
         <script type="text/javascript" src="lib/angular-chart.js/angular-chart.js"></script>
         <script type="text/javascript" src="lib/lodash/dist/lodash.js"></script>
+        <script type="text/javascript" src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+        <script type="text/javascript" src="lib/angular-ui-keypress/modules/keypress/keypress.js"></script>
+        <script type="text/javascript" src="lib/angular-loading-bar/src/loading-bar.js"></script>
 
+        <script type="text/javascript" src="app/appConfig.js"></script>
         <script type="text/javascript" src="app/app.js"></script>
-        <script type="text/javascript" src="app/getDataDirective/get-data.directive.js"></script>
+        <script type="text/javascript" src="app/pieChart/pie-chart.js"></script>
         <!--<script type="text/javascript" src="app/getChartData.js"></script>-->
 
     </head>
-    <body ng-controller="chartMakerController">
-        <get-data></get-data>
-        <footer style="clear: both;">{{appVersion}}</footer>
+    <body>
+    <ui-view></ui-view>
     </body>
 </html>

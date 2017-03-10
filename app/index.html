@@ -1,0 +1,42 @@
+<div class="navbar navbar-default navbar-fixed-top">
+    <nav class="container">
+        <ul class="nav navbar-nav">
+            <li><a ui-sref="home" href="#container" role="button" class="navbar-brand">Chart Maker</a></li>
+            <li ng-repeat="menuItem in menuItems"><a ui-sref="{{menuItem.href}}" href="#">{{menuItem.title}}</a></li>
+        </ul>
+    </nav>
+</div>
+<header id="container">
+    <canvas id="hero-bar" class="chart chart-line" chart-options="topOptions" chart-data="topData" chart-labels="topLabels"></canvas>
+    <div id="header">
+        <h1>Chart Maker</h1>
+        <h2>Need A Chart ? Let's Go !</h2>
+    </div>
+    <button type="button" class="btn btn-primary btn-lg">
+        {{buttonText}}
+    </button>
+</header>
+
+<ui-view>
+    <div class="container">
+        <section id="chartMakerIndex">
+            <div class="page-header">
+                <h2 style="display: inline-block;">
+                    Getting started
+                </h2>
+            </div>
+            <div class="col-sm-8">
+
+                <h3>Pie Chart</h3>
+                <p><b>Pie Chart</b> needs labels and values (data).</p>
+                <p>Labels should be unique and each label has a value.</p>
+                <p>You can set values with just typing the value; no need to press any button!</p>
+                <p>It can be usable if you take a screenshot of chart or give the unique link to others (+feature)</p>
+            </div>
+            <div class="col-sm-4">
+                <img style="width: 100%" src="assets/images/pieChart.png" alt="Pie Chart Example">
+            </div>
+        </section>
+    </div>
+</ui-view>
+<!--<footer style="clear: both;">{{appVersion}}</footer>-->

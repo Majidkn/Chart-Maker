@@ -1,0 +1,37 @@
+<div class="container">
+    <section id="pieChart">
+        <div class="page-header">
+            <h2 style="display: inline-block;">Generate Pie Chart</h2>
+        </div>
+    </section>
+    <div style="margin-bottom: 50px; z-index: 1;" class="col-sm-12">
+        <div class="col-sm-6">
+            <div class="col-sm-12">
+                <label style="display: block">Input Your Labels</label>
+                <input style="display: inline-block" ui-keypress="{13:'Func.onAddLabelClick(Data.newLabel)'}" ng-model="Data.newLabel" class="form-control" type="text"><span role="button" style="right: 20px;" ng-click="Func.onAddLabelClick(Data.newLabel)" class="glyphicon glyphicon-plus text-success"></span>
+                <ul>
+                    <li class="showLabels list-inline" ng-repeat="label in Data.pieDetails.labels">
+                        {{label}}<span role="button" ng-click="Func.onRemoveLabelClick(label)" style="top: 2px; left: 2px;" class="glyphicon glyphicon-remove text-danger"></span>
+                    </li>
+                </ul>
+                <button ng-show="Data.pieDetails.labels.length" style="margin: 10px 0" ng-click="Func.generateByType()" type="button" class="btn btn-success">
+                    Generate !
+                </button>
+            </div>
+
+        </div>
+        <div class="col-sm-6">
+            <ul style="position: relative">
+                <li class="showDataInputs" ng-repeat="data in Data.pieDetails.data track by $index">
+                    <span class="glyphicon glyphicon-chevron-right text-primary"></span>
+                    <label style="display: block">Input Your Data</label>
+                    <input ng-model="newData" value="0" class="form-control" ng-change="Func.onAddDataClick(newData,$index)" type="text">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div ng-show="Data.data.length" class="col-sm-6 chartPie">
+        <canvas id="pie" class="chart chart-pie" chart-data="Data.data" chart-labels="Data.labels"></canvas>
+    </div>
+</div>
