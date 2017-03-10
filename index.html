@@ -4,7 +4,6 @@
         <meta charset="utf-8" />
 
         <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
-        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap-theme.css">
         <link rel="stylesheet" href="app/getDataDirective/style.css">
 
         <script type="text/javascript" src="lib/jquery/dist/jquery.js"></script>
@@ -21,10 +20,7 @@
 
     </head>
     <body ng-controller="chartMakerController">
-        <div class="container">
-            <header><h1>Welcome To {{appTitle}}</h1></header>
-            <get-data></get-data>
-            <footer style="clear: both;">{{appVersion}}</footer>
-        </div>
+        <get-data></get-data>
+        <footer style="clear: both;">{{appVersion}}</footer>
     </body>
 </html>

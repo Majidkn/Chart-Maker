@@ -1,3 +1,22 @@
+
+#container{
+    position: relative;
+    text-align: center;
+}
+#hero-bar {
+    height: 50vh !important;
+    margin-top: 50px;
+}
+#header{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+#container .btn-success{
+    bottom: 25px;
+    position: relative;
+}
 .btn-group{
     margin-bottom: 20px;
 }
